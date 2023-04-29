@@ -179,7 +179,7 @@ class StockFormatter(GenericDataFormatter):
     fixed_params = {
         'total_time_steps': 252 + 5,
         'num_encoder_steps': 252,
-        'num_epochs': 2,
+        'num_epochs': 100,
         'early_stopping_patience': 5,
         'multiprocessing_workers': 5,
     }
@@ -195,7 +195,7 @@ class StockFormatter(GenericDataFormatter):
         'learning_rate': 0.01,
         'minibatch_size': 64,
         'max_gradient_norm': 0.01,
-        'num_heads': 1,
+        'num_heads': 4,
         'stack_size': 1
     }
 
