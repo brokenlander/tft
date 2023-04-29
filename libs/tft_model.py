@@ -1117,7 +1117,7 @@ class TemporalFusionTransformer(object):
             filepath=self.get_keras_saved_path(self._temp_folder),
             monitor='val_loss',
             save_best_only=True,
-            save_weights_only=True),
+            save_weights_only=False),
         tf.keras.callbacks.TerminateOnNaN()
     ]
 
